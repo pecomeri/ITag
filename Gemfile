@@ -67,3 +67,6 @@ end
 # debugger
 gem 'pry-rails'
 gem 'pry-byebug'
+
+# Manage Tag
+gem 'acts-as-taggable-on'

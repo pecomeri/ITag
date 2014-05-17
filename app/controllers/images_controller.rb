@@ -1,10 +1,14 @@
 class ImagesController < ApplicationController
   before_action :set_image, only: [:show, :edit, :update, :destroy]
+  
+  def tag_cloud
+    @tags = Image.tage_counts_on(:tags).order('count DESC')
+  end
 
   # GET /images
   # GET /images.json
   def index
-    @images = Image.all
+    @image = Image.find_by id: 1
   end
 
   # GET /images/1
