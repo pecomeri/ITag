@@ -70,3 +70,6 @@ gem 'pry-byebug'
 
 # Manage Tag
 gem 'acts-as-taggable-on'
+
+# for login feature
+gem 'devise'
