@@ -50,6 +50,7 @@ gem "twitter-bootstrap-rails", :git => 'git://github.com/seyhunak/twitter-bootst
 
 # Haml
 gem 'haml-rails'
+gem 'erb2haml'
 
 # form
 gem 'simple_form'
@@ -70,3 +71,10 @@ gem 'pry-byebug'
 
 # Manage Tag
 gem 'acts-as-taggable-on'
+
+# for user sign in
+gem 'devise'
+gem 'cancancan'
+
+# form helper
+# gem 'enum_help'
