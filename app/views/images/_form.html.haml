@@ -1,0 +1,9 @@
+.row
+  .col-md-8
+    = simple_form_for @image, :html => { :class => 'form-horizontal' } do |f|
+      = f.input :title
+      = error_span(@image[:title])
+      = f.input :description
+      = error_span(@image[:description])
+      = f.button :submit, :class => 'btn-primary'
+      = link_to t('.cancel', :default => t("helpers.links.cancel")), images_path, :class => 'btn btn-default'

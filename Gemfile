@@ -43,3 +43,30 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem "therubyracer", :platform => :ruby
+gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem "twitter-bootstrap-rails", :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+
+# Haml
+gem 'haml-rails'
+
+# form
+gem 'simple_form'
+
+# for Unit Test
+group :development, :test do
+  gem 'rspec-rails', '2.13.1'
+  gem 'capybara', '2.1.0'
+  gem 'factory_girl_rails', '4.2.1'
+  gem 'database_cleaner', github: 'bmabey/database_cleaner'
+  gem 'launchy'
+  gem 'poltergeist'
+end
+
+# debugger
+gem 'pry-rails'
+gem 'pry-byebug'
+
+# Manage Tag
+gem 'acts-as-taggable-on'
