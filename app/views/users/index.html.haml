@@ -1,0 +1,6 @@
+%h1 
+  test
+  = link_to "sign in with twitter", "/auth/twitter"
+  - @users.each do |user|
+    = user.name
+    = user.email

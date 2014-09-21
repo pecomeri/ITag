@@ -70,3 +70,10 @@ gem 'pry-byebug'
 
 # Manage Tag
 gem 'acts-as-taggable-on'
+
+# for login feature
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-twitter'
+gem 'omniauth-facebook'
+gem 'omniauth-linkedin'

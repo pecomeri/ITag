@@ -1,5 +1,8 @@
 Bijin::Application.routes.draw do
+  resources :users
+  devise_for :users, :controllers => { omniauth_callbacks: 'omniauth_callbacks' }
   resources :images
+  match '/users/:id/finish_signup' => 'users#finish_signup', via: [:get, :patch], :as => :finish_signup
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
